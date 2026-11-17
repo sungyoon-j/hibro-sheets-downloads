@@ -4,15 +4,21 @@ HiBro Sheets is an independently installable HiBro editor. The unified Office ap
 
 [Downloads and Korean installation guide](https://hibro-office-download.jsyoon6532.chatgpt.site/download/#individual)
 
-| System | Installer 0.8.59 |
+| System | Installer 0.8.61 |
 | --- | --- |
-| Mac · Apple Silicon | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.59/HiBro-Sheets-0.8.59-mac-arm64.dmg) |
-| Mac · Intel | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.59/HiBro-Sheets-0.8.59-mac-x64.dmg) |
-| Windows x64 · unsigned preview | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.59/HiBro-Sheets-0.8.59-win-x64.exe) |
+| Mac · Apple Silicon | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.61/HiBro-Sheets-0.8.61-mac-arm64.dmg) |
+| Mac · Intel | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.61/HiBro-Sheets-0.8.61-mac-x64.dmg) |
+| Windows x64 · unsigned preview | [Download](https://github.com/sungyoon-j/hibro-sheets-downloads/releases/download/v0.8.61/HiBro-Sheets-0.8.61-win-x64.exe) |
 
 Mac requires macOS 13 or later. Mac installers are signed and notarized. Basic editing and file saving work without an account. Each app has its own local workspace and automatic update channel. Open existing documents through File Open. The unified HiBro Office app can remain installed. New updates are downloaded automatically and applied after documents are saved and the app quits normally.
 
 Windows installers are unsigned previews. Hosted Windows tests cover installation, physical file editing/saving/reopening, and real public-feed updates. Verification on an ordinary physical Windows PC remains outstanding. Optional online vault login is not verified while the existing service is paused.
+## 0.8.61 변경 사항
+
+Word 첫 페이지 별도 머리글·바닥글이 있는 양식의 열기, 빈칸 입력과 저장을 보완했습니다. 문단 끝 글꼴과 빈 줄 높이, 제목 전체 수정 시 원래 글꼴·크기를 보존합니다. 문서 편집 호환성과 큰 스프레드시트 선택 응답을 보완했습니다. 구역별 머리글·바닥글은 원본 보존 대상으로 직접 편집에는 제한이 있습니다. 복잡한 문서는 사본에서 먼저 확인해 주세요.
+
+Mac Apple Silicon·Intel과 Windows x64의 실제 설치 파일에서 495개 포함 파일을 대조하고, 39개 내장 처리 도구 검사와 DOCX·XLSX의 3회 저장·재열기를 확인했습니다. 사용자 Mac에서도 신청서 빈칸 입력·저장·앱 종료 후 실제 파일 재열기를 확인했습니다. Windows 설치 파일은 서명 전 시험판이며 일반 직원 PC의 화면·입력 검증은 별도입니다.
+
 ## 0.8.59 변경 사항
 
 글자 사이에 들어간 그림의 순서가 DOCX 수정·저장 후에도 유지되도록 고쳤습니다. 엑셀의 음수·거듭제곱 계산 순서와 SUM·COUNT·COUNTA의 직접 입력값·참조 셀·빈 문자열·오류 집계를 수정했습니다. 실제 설치 앱의 Mac 화면 검사와 Mac·Windows 내장 처리 도구의 DOCX·XLSX 저장·재열기를 확인했습니다. 기존 사용자는 문서를 저장한 뒤 앱을 정상 종료하면 자동으로 내려받은 업데이트가 적용됩니다.
@@ -26,3 +32,4 @@ Windows installers are unsigned previews. Hosted Windows tests cover installatio
 Preserves percentage printing versus fit-to-pages, original margins, print area and manual page breaks. Page Layout offers explicit percentage, one-page, width/height and custom page counts. Long sheets remain multipage when requested. Files whose print mode was already overwritten by an older app need the desired mode selected again.
 
 PDF/ODF conversion requires LibreOffice installed on the computer. Basic editing and saving do not require it or an account.
+
